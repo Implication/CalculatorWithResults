@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        UISwipeGestureRecognizer *reconizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRecognizer:)];
+        [recognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+        [[self view] addGestureREcognizer:recognizer];
+        [recognizer release];
+        
+        recognizer.delegate = self;
     }
 
     override func didReceiveMemoryWarning() {
