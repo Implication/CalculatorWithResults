@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F94744761E706ED900B65CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94744751E706ED900B65CCB /* AppDelegate.swift */; };
-		F94744781E706ED900B65CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94744771E706ED900B65CCB /* ViewController.swift */; };
-		F947447B1E706ED900B65CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94744791E706ED900B65CCB /* Main.storyboard */; };
+		F94744781E706ED900B65CCB /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94744771E706ED900B65CCB /* CalculatorViewController.swift */; };
 		F947447D1E706ED900B65CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F947447C1E706ED900B65CCB /* Assets.xcassets */; };
 		F94744801E706ED900B65CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F947447E1E706ED900B65CCB /* LaunchScreen.storyboard */; };
 		F947448B1E706ED900B65CCB /* CalculatorWithSwipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947448A1E706ED900B65CCB /* CalculatorWithSwipesTests.swift */; };
+		F94744961E70830000B65CCB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94744951E70830000B65CCB /* ResultsViewController.swift */; };
+		F94744991E7093D400B65CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94744981E7093D400B65CCB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,15 @@
 /* Begin PBXFileReference section */
 		F94744721E706ED900B65CCB /* CalculatorWithSwipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorWithSwipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94744751E706ED900B65CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F94744771E706ED900B65CCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F947447A1E706ED900B65CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F94744771E706ED900B65CCB /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		F947447C1E706ED900B65CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F947447F1E706ED900B65CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94744811E706ED900B65CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94744861E706ED900B65CCB /* CalculatorWithSwipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorWithSwipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F947448A1E706ED900B65CCB /* CalculatorWithSwipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorWithSwipesTests.swift; sourceTree = "<group>"; };
 		F947448C1E706ED900B65CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94744951E70830000B65CCB /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F94744981E7093D400B65CCB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,9 @@
 		F94744741E706ED900B65CCB /* CalculatorWithSwipes */ = {
 			isa = PBXGroup;
 			children = (
+				F94744981E7093D400B65CCB /* Main.storyboard */,
 				F94744751E706ED900B65CCB /* AppDelegate.swift */,
-				F94744771E706ED900B65CCB /* ViewController.swift */,
-				F94744791E706ED900B65CCB /* Main.storyboard */,
+				F94744971E7092F800B65CCB /* Controllers */,
 				F947447C1E706ED900B65CCB /* Assets.xcassets */,
 				F947447E1E706ED900B65CCB /* LaunchScreen.storyboard */,
 				F94744811E706ED900B65CCB /* Info.plist */,
@@ -94,6 +96,15 @@
 				F947448C1E706ED900B65CCB /* Info.plist */,
 			);
 			path = CalculatorWithSwipesTests;
+			sourceTree = "<group>";
+		};
+		F94744971E7092F800B65CCB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F94744951E70830000B65CCB /* ResultsViewController.swift */,
+				F94744771E706ED900B65CCB /* CalculatorViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +190,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94744991E7093D400B65CCB /* Main.storyboard in Resources */,
 				F94744801E706ED900B65CCB /* LaunchScreen.storyboard in Resources */,
 				F947447D1E706ED900B65CCB /* Assets.xcassets in Resources */,
-				F947447B1E706ED900B65CCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94744781E706ED900B65CCB /* ViewController.swift in Sources */,
+				F94744781E706ED900B65CCB /* CalculatorViewController.swift in Sources */,
+				F94744961E70830000B65CCB /* ResultsViewController.swift in Sources */,
 				F94744761E706ED900B65CCB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +235,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F94744791E706ED900B65CCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F947447A1E706ED900B65CCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F947447E1E706ED900B65CCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -406,6 +410,7 @@
 				F94744911E706ED900B65CCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F94744921E706ED900B65CCB /* Build configuration list for PBXNativeTarget "CalculatorWithSwipesTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +419,7 @@
 				F94744941E706ED900B65CCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
