@@ -14,6 +14,7 @@
 		F947448B1E706ED900B65CCB /* CalculatorWithSwipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947448A1E706ED900B65CCB /* CalculatorWithSwipesTests.swift */; };
 		F94744961E70830000B65CCB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94744951E70830000B65CCB /* ResultsViewController.swift */; };
 		F94744991E7093D400B65CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94744981E7093D400B65CCB /* Main.storyboard */; };
+		F9BC61FF1E76EFC600DBFFD9 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BC61FE1E76EFC600DBFFD9 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F947448C1E706ED900B65CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94744951E70830000B65CCB /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F94744981E7093D400B65CCB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		F9BC61FE1E76EFC600DBFFD9 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F947447C1E706ED900B65CCB /* Assets.xcassets */,
 				F947447E1E706ED900B65CCB /* LaunchScreen.storyboard */,
 				F94744811E706ED900B65CCB /* Info.plist */,
+				F9BC61FE1E76EFC600DBFFD9 /* GraphView.swift */,
 			);
 			path = CalculatorWithSwipes;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				F94744781E706ED900B65CCB /* CalculatorViewController.swift in Sources */,
 				F94744961E70830000B65CCB /* ResultsViewController.swift in Sources */,
 				F94744761E706ED900B65CCB /* AppDelegate.swift in Sources */,
+				F9BC61FF1E76EFC600DBFFD9 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
