@@ -39,13 +39,12 @@ class CalculatorViewController: UIViewController {
     }
     
     
-    @IBAction func calculate(_ sender: Any) {
+    @IBAction func calculate(_ sender: Any!){
         let price: Double = Double(priceText.text!)!
         let dollaroff: Double = Double(dollaroffText.text!)!
         var discount: Double = Double(discountText.text!)!
         var otherdiscount: Double = Double(otherdiscountText.text!)!
         var tax: Double = Double(taxText.text!)!
-        
         if discount > 1 {
             discount = discount / 100
         }
@@ -61,13 +60,20 @@ class CalculatorViewController: UIViewController {
         }
         tax = price * tax
         
-        let op: Double = price + tax
+        let op: Double = price + tax + 0.005
         originalPrice.text = String(format: "%.2f", op)
         
         let dp = op - dollaroff - discount - otherdiscount
         discountPrice.text = String(format: "%.2f", dp)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if(segue.identifier == "showResults"){
+            let svc = segue.destination as? ResultsViewController
+            svc?.toPass = originalPrice.text
+            svc?.toPass2 = discountPrice.text
+        }
+    }
     
     @IBAction func unwindToCalc(seque:UIStoryboardSegue) {}
 }

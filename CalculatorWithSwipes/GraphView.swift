@@ -12,7 +12,7 @@ class GraphView: UIView {
         override func draw(_ rect: CGRect){
             //drawing code
             let context : CGContext = UIGraphicsGetCurrentContext()!
-            context.setFillColor(red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            context.setFillColor(red: 0.0, green: 0.51, blue: 1.0, alpha: 1.0)
             
             let screenWidth = UIScreen.main.bounds.width
             let screenHeight = UIScreen.main.bounds.height
@@ -27,10 +27,6 @@ class GraphView: UIView {
             context.setFillColor(red: 0.61, green: 0.25, blue: 0.0, alpha: 1.0)
             context.fill(CGRect(x: rightGuide/2, y: topGuide - 16.0, width: rightGuide/2, height: botGuide/2))            //Draw Text
             context.setFillColor(red: 0.0, green: 0.65, blue: 0.16, alpha: 1.0);            context.fill(CGRect(x: rightGuide/2, y: botGuide/2, width: rightGuide/2, height: botGuide))
-            
-            let myText="Original Price"
-            
-            
-            myText.draw(at: CGPoint(x: leftGuide + 16.0, y: topGuide + 20.0))
+
 }
 }
