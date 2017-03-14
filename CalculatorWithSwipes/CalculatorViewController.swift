@@ -9,7 +9,7 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-    
+    //MARKUP: Properties
     @IBOutlet weak var priceText: UITextField!
     @IBOutlet weak var dollaroffText: UITextField!
     @IBOutlet weak var discountText: UITextField!
