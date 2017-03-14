@@ -13,7 +13,6 @@ class GraphView: UIView {
             //drawing code
             let context : CGContext = UIGraphicsGetCurrentContext()!
             context.setFillColor(red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            context.fill(CGRect(x: 30, y: 60, width: 100, height: 200))
             
             let screenWidth = UIScreen.main.bounds.width
             let screenHeight = UIScreen.main.bounds.height
@@ -23,11 +22,15 @@ class GraphView: UIView {
             let topGuide:CGFloat = 72.0
             let botGuide:CGFloat =  screenHeight - 16.0
             
-            //Draw Text
-            let myText="Cyan blue"
-            let subText="Another text"
+            context.fill(CGRect(x: leftGuide, y: topGuide - 16.0, width: rightGuide/2, height: botGuide))
+        
+            context.setFillColor(red: 0.61, green: 0.25, blue: 0.0, alpha: 1.0)
+            context.fill(CGRect(x: rightGuide/2, y: topGuide - 16.0, width: rightGuide/2, height: botGuide/2))            //Draw Text
+            context.setFillColor(red: 0.0, green: 0.65, blue: 0.16, alpha: 1.0);            context.fill(CGRect(x: rightGuide/2, y: botGuide/2, width: rightGuide/2, height: botGuide))
+            
+            let myText="Original Price"
             
             
-            myText.draw(at: CGPoint(x: leftGuide + 16.0, y: topGuide + 16.0))
-            subText.draw(at: CGPoint(x: leftGuide + 16.0, y: topGuide + 32.0))    }
+            myText.draw(at: CGPoint(x: leftGuide + 16.0, y: topGuide + 20.0))
+}
 }
