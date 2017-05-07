@@ -13,9 +13,9 @@
 		F94744801E706ED900B65CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F947447E1E706ED900B65CCB /* LaunchScreen.storyboard */; };
 		F947448B1E706ED900B65CCB /* CalculatorWithSwipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947448A1E706ED900B65CCB /* CalculatorWithSwipesTests.swift */; };
 		F94744961E70830000B65CCB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94744951E70830000B65CCB /* ResultsViewController.swift */; };
-		F94744991E7093D400B65CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94744981E7093D400B65CCB /* Main.storyboard */; };
 		F98AB3451E779D0B00659203 /* DiscountCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98AB3441E779D0B00659203 /* DiscountCalc.swift */; };
 		F9BC61FF1E76EFC600DBFFD9 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BC61FE1E76EFC600DBFFD9 /* GraphView.swift */; };
+		F9FC567F1EBEC01700BE4ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FC567E1EBEC01700BE4ED4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,9 @@
 		F947448A1E706ED900B65CCB /* CalculatorWithSwipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorWithSwipesTests.swift; sourceTree = "<group>"; };
 		F947448C1E706ED900B65CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94744951E70830000B65CCB /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		F94744981E7093D400B65CCB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		F98AB3441E779D0B00659203 /* DiscountCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCalc.swift; sourceTree = "<group>"; };
 		F9BC61FE1E76EFC600DBFFD9 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		F9FC567E1EBEC01700BE4ED4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		F94744741E706ED900B65CCB /* CalculatorWithSwipes */ = {
 			isa = PBXGroup;
 			children = (
-				F94744981E7093D400B65CCB /* Main.storyboard */,
+				F9FC567E1EBEC01700BE4ED4 /* Main.storyboard */,
 				F94744751E706ED900B65CCB /* AppDelegate.swift */,
 				F94744971E7092F800B65CCB /* Controllers */,
 				F947447C1E706ED900B65CCB /* Assets.xcassets */,
@@ -196,9 +196,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94744991E7093D400B65CCB /* Main.storyboard in Resources */,
 				F94744801E706ED900B65CCB /* LaunchScreen.storyboard in Resources */,
 				F947447D1E706ED900B65CCB /* Assets.xcassets in Resources */,
+				F9FC567F1EBEC01700BE4ED4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
